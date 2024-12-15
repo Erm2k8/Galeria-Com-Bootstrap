@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    filter: grayscale(1); 
+}
+
+.gallery img:hover {
+    transition-duration: 0.2s;
+    cursor: pointer;
+    opacity: 0.9;
+    filter: none;
+}
+
+.image-card {
+    position: relative;
+}
+
+.image-card:hover img {
+    transition-duration: 0.2s;
+    filter: none;
+}
+
+.image-card:hover .deleteButton {
+    transition-duration: 0.2s;
+    display: block;
+}
+
+.deleteButton:hover {
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.deleteButton {
+    display: none;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+#github-link {
+    gap: 10px;
+}
+
+#github-username {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 600;
+}
